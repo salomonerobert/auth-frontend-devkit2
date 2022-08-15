@@ -4,11 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { FronteggProvider } from '@frontegg/react';
+
+const contextOptions = {
+  baseUrl: "https://app-ehr2mznb4vzs.frontegg.com",
+  clientId: "157573bb-20ba-43e4-9b7c-b970461c29bb"
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <FronteggProvider contextOptions={contextOptions} hostedLoginBox={true}>
     <App />
-  </React.StrictMode>
+  </FronteggProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
