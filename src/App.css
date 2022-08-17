@@ -35,3 +35,9 @@
 .detail {
   display: block;
 }
+.orderlist {
+  margin-top: 10px;
+}
+#mypanel {
+  margin: 10px;
+}
